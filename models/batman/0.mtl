@@ -1,0 +1,74 @@
+# Blender MTL File: 'ModelRenderLighting.blend'
+# Material Count: 5
+
+newmtl 22_face_0.1_170_170.008
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.543291 0.441775 0.616379
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ks body_s.tga
+map_d body_d.tga
+
+newmtl 25_body_0.1_0_0.001
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.469334 0.413856 0.762523
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ks body_s.tga
+map_d body_d.tga
+
+newmtl 25_eyes_0.1_0_0.011
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.615452 0.536641 0.705835
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ks body_s.tga
+map_d body_d.tga
+
+newmtl 27_eyesenv_1_0_0.011
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.431740 0.588270 0.659662
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ke eye_env.tga
+map_d body_d.tga
+refl eye_env.tga
+
+newmtl 27_yellowenv_1_0_0.012
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.636026 0.720844 0.547448
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd body_d.tga
+map_Bump body_n.tga
+map_Ke yellow_env.tga
+map_d body_d.tga
+refl yellow_env.tga

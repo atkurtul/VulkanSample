@@ -1,0 +1,71 @@
+root ground: 0 -0.5 0 0.001000002 -0.09800003 0.06799999 1 1 1
+root hips: 0 0 0 0 0 0 1 1 1
+spine lower: -5 0 0 0 0 0 1 1 1
+spine upper: 11.5 0 0 0 0 0 1 1 1
+head neck lower: -6.5 18 2.5 0 0 0 1 1 1
+head neck upper: 27 14.5 -1 0 0 0 1 1 1
+arm left shoulder 1: 0 0 0 0 0 0 1 1 1
+arm left shoulder 2: -17.5 -9.5 -10 0 0 0 1 1 1
+arm left elbow: 18 0 6.5 0 0 0 1 1 1
+arm left wrist: 6 7 -3.5 0 0 0 1 1 1
+arm left finger 1a: 0 0 0 0 0 0 1 1 1
+arm left finger 1b: 18.5 0 0 0 0 0 1 1 1
+arm left finger 1c: 22 0 0 0 0 0 1 1 1
+arm left finger 4a: -11.5 -9 -5 0 0 0 1 1 1
+arm left finger 4b: 8 -3 -30 0 0 0 1 1 1
+arm left finger 4c: 8 -3 -30 0 0 0 1 1 1
+arm left finger 3a: -3 -5 -6 0 0 0 1 1 1
+arm left finger 3b: 8 -1 -30 0 0 0 1 1 1
+arm left finger 3c: 8 -3 -30 0 0 0 1 1 1
+arm left finger 5a: -4 7 -13 0 0 0 1 1 1
+arm left finger 5b: 8 -3 -30 0 0 0 1 1 1
+arm left finger 5c: 8 -3 -30 0 0 0 1 1 1
+arm left finger 2a: 1 -2 5 0 0 0 1 1 1
+arm left finger 2b: 0 -2 -15 0 0 0 1 1 1
+arm left finger 2c: 0 0 -16.5 0 0 0 1 1 1
+arm right shoulder 1: 0 0 0 0 0 0 1 1 1
+arm right shoulder 2: -17.5 9.5 10 0 0 0 1 1 1
+arm right elbow: 18 0 -6.5 0 0 0 1 1 1
+arm right wrist: 8 0 6.5 0 0 0 1 1 1
+arm right finger 5a: -4 -7 13 0 0 0 1 1 1
+arm right finger 5b: 8 3 30 0 0 0 1 1 1
+arm right finger 5c: 8 3 30 0 0 0 1 1 1
+arm right finger 1a: -8 0 -9 0 0 0 1 1 1
+arm right finger 1b: 18.5 0 0 0 0 0 1 1 1
+arm right finger 1c: 22 0 0 0 0 0 1 1 1
+arm right finger 3a: -3 5 6 0 0 0 1 1 1
+arm right finger 3b: 8 1 30 0 0 0 1 1 1
+arm right finger 3c: 8 3 30 0 0 0 1 1 1
+arm right finger 4a: -11.5 9 5 0 0 0 1 1 1
+arm right finger 4b: 8 3 30 0 0 0 1 1 1
+arm right finger 4c: 8 3 30 0 0 0 1 1 1
+arm right finger 2a: 1 2 -5 0 0 0 1 1 1
+arm right finger 2b: 0 2 15 0 0 0 1 1 1
+arm right finger 2c: 0 0 16.5 0 0 0 1 1 1
+cape root: 0 5 -4 0 0 0 1 1 1
+cape left root: 0 -9 -2 0 0 0 1 1 1
+cape left 2a: 0 5 -4 0 0 0 1 1 1
+cape left 2b: 0 5 -4 0 0 0 1 1 1
+cape left 2c: 5 5 -4 0 0 0 1 1 1
+cape left 2d: 41 5 -4 0 0 0 1 1 1
+cape left 1a: 0 5 -4 0 0 0 1 1 1
+cape left 1b: 0 5 -4 0 0 0 1 1 1
+cape left 1c: 0 5 -4 0 0 0 1 1 1
+cape left 1d: 48.5 5 -4 0 0 0 1 1 1
+cape right root: 2.5 -10.5 5.5 0 0 0 1 1 1
+cape right 1a: 0 30 9 0 0 0 1 1 1
+cape right 1b: 0 5 -4 0 0 0 1 1 1
+cape right 1c: 0.5 5 -4 0 0 0 1 1 1
+cape right 1d: 44.5 5 -4 0 0 0 1 1 1
+cape right 2a: 0 5 -4 0 0 0 1 1 1
+cape right 2b: 0 5 -4 0 0 0 1 1 1
+cape right 2c: 8.5 5 -4 0 0 0 1 1 1
+cape right 2d: 39 5 -4 0 0 0 1 1 1
+leg right thigh: -4.5 -8.5 -4.5 0 0 0 1 1 1
+leg right knee: 12.5 0 0 0 0 0 1 1 1
+leg right ankle: -7.5 -7 4 0 0 0 1 1 1
+leg right tpes: 0 0 0 0 0 0 1 1 1
+leg left thigh: -4.5 8.5 4.5 0 0 0 1 1 1
+leg left knee: 12.5 0 0 0 0 0 1 1 1
+leg left ankle: -7.5 7 -4 0 0 0 1 1 1
+leg left toes: 0 0 0 0 0 0 1 1 1

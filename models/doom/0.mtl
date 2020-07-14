@@ -1,0 +1,105 @@
+# Blender MTL File: 'MRL-279.blend'
+# Material Count: 8
+
+newmtl 4_Material106_0.4_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.585543 0.715467 0.519782
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd doom_shoulder_d.png
+map_Bump doom_shoulder_n.png
+map_d doom_shoulder_d.png
+
+newmtl 4_Material118_0.4_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.708862 0.744514 0.604525
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd doom_arms_d.png
+map_Bump doom_arms_n.png
+map_d doom_arms_d.png
+
+newmtl 4_Material119_0.4_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.564910 0.459339 0.698406
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd doom_helm_d.png
+map_Bump doom_helm_n.png
+map_d doom_helm_d.png
+
+newmtl 4_Material120_0.25_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.592259 0.429929 0.581551
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd doom_face_d.png
+map_Bump doom_face_n.png
+map_d doom_face_d.png
+
+newmtl 4_Material132_0.25_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.577131 0.535031 0.697493
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd eye_d.png
+map_Bump eye_n.png
+map_d eye_d.png
+
+newmtl 4_Material93_0.4_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.606041 0.563955 0.613202
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd doom_legs_d.png
+map_Bump doom_legs_n.png
+map_d doom_legs_d.png
+
+newmtl 4_Material94_0.4_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.504191 0.474233 0.649342
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd doom_chest_d.png
+map_Bump doom_chest_n.png
+map_d doom_chest_d.png
+
+newmtl 7_Material144_1_0_0
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.430460 0.752607 0.779490
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 0.000000
+illum 1
+map_Kd visor_d.png
+map_d visor_d.png

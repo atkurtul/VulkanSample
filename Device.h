@@ -1,0 +1,114 @@
+#pragma once
+#include "pch.h"
+
+VkInstance GetInstance();
+VkDevice GetDevice();
+VkPhysicalDevice GetPhysicalDevice();
+VkQueue GetQueue();
+VkQueue GetDeviceQueue(uint queueFamilyIndex, uint queueIndex);
+void QueueSubmit(uint count, const VkSubmitInfo* submits, VkFence fence);
+void QueueWaitIdle();
+void QueuePresent(const VkPresentInfoKHR* info);
+void DeviceWaitIdle();
+VkDeviceMemory AllocateMemory(const VkMemoryAllocateInfo* pAllocateInfo);
+void FreeMemory(VkDeviceMemory memory);
+char* MapMemory(VkDeviceMemory memory, VkDeviceSize offset, VkDeviceSize size);
+void UnmapMemory(VkDeviceMemory memory);
+void FlushMappedMemoryRanges(uint memoryRangeCount, const VkMappedMemoryRange* pMemoryRanges);
+void InvalidateMappedMemoryRanges(uint memoryRangeCount, const VkMappedMemoryRange* pMemoryRanges);
+VkDeviceSize GetDeviceMemoryCommitment(VkDeviceMemory memory);
+void BindBufferMemory(VkBuffer buffer, VkDeviceMemory memory, VkDeviceSize memoryOffset);
+void BindImageMemory(VkImage image, VkDeviceMemory memory, VkDeviceSize memoryOffset);
+VkMemoryRequirements GetBufferMemoryRequirements(VkBuffer buffer);
+VkMemoryRequirements GetImageMemoryRequirements(VkImage image);
+VkSparseImageMemoryRequirements GetImageSparseMemoryRequirements(VkImage image, uint32_t* pSparseMemoryRequirementCount);
+VkFence CreateFence(VkFenceCreateFlags flag);
+void DestroyFence(VkFence fence);
+void ResetFences(uint32_t fenceCount, const VkFence* pFences);
+void GetFenceStatus(VkFence fence);
+void WaitForFences(uint fenceCount, const VkFence* pFences, VkBool32 waitAll, uint64 timeout);
+VkSemaphore CreateSemaphore(VkSemaphoreCreateFlags flag);
+void DestroySemaphore(VkSemaphore semaphore);
+VkEvent CreateEvent(VkEventCreateFlags flag);
+void DestroyEvent(VkEvent event);
+void GetEventStatus(VkEvent event);
+void VkSetEvent(VkEvent event);
+void VkResetEvent(VkEvent event);
+void CreateQueryPool(const VkQueryPoolCreateInfo* pCreateInfo, VkQueryPool* pQueryPool);
+void DestroyQueryPool(VkQueryPool queryPool);
+void GetQueryPoolResults(VkQueryPool queryPool, uint firstQuery, uint queryCount, size_t dataSize, void* pData, VkDeviceSize stride, VkQueryResultFlags flags);
+VkBuffer CreateBuffer(const VkBufferCreateInfo* pCreateInfo);
+void DestroyBuffer(VkBuffer buffer);
+VkBufferView CreateBufferView(const VkBufferViewCreateInfo* pCreateInfo);
+void DestroyBufferView(VkBufferView bufferView);
+VkImage CreateImage(const VkImageCreateInfo* pCreateInfo);
+void DestroyImage(VkImage image);
+VkSubresourceLayout GetImageSubresourceLayout(VkImage image, const VkImageSubresource* pSubresource);
+VkImageView CreateImageView(const VkImageViewCreateInfo* pCreateInfo);
+void DestroyImageView(VkImageView imageView);
+VkShaderModule CreateShaderModule(const VkShaderModuleCreateInfo* pCreateInfo);
+void DestroyShaderModule(VkShaderModule shaderModule);
+VkPipelineCache CreatePipelineCache(const VkPipelineCacheCreateInfo* pCreateInfo);
+void DestroyPipelineCache(VkPipelineCache pipelineCache);
+void GetPipelineCacheData(VkPipelineCache pipelineCache, size_t* pDataSize, void* pData);
+void MergePipelineCaches(VkPipelineCache dstCache, uint srcCacheCount, const VkPipelineCache* pSrcCaches);
+void CreateGraphicsPipelines(VkPipelineCache pipelineCache, uint createInfoCount, const VkGraphicsPipelineCreateInfo* pCreateInfos, VkPipeline* pPipelines);
+void CreateComputePipelines(VkPipelineCache pipelineCache, uint createInfoCount, const VkComputePipelineCreateInfo* pCreateInfos, VkPipeline* pPipelines);
+void DestroyPipeline(VkPipeline pipeline);
+VkPipelineLayout CreatePipelineLayout(const VkPipelineLayoutCreateInfo* pCreateInfo);
+void DestroyPipelineLayout(VkPipelineLayout pipelineLayout);
+VkSampler CreateSampler(const VkSamplerCreateInfo* pCreateInfo);
+void DestroySampler(VkSampler sampler);
+VkDescriptorSetLayout CreateDescriptorSetLayout(const VkDescriptorSetLayoutCreateInfo* pCreateInfo);
+void DestroyDescriptorSetLayout(VkDescriptorSetLayout descriptorSetLayout);
+VkDescriptorPool CreateDescriptorPool(const VkDescriptorPoolCreateInfo* pCreateInfo);
+void DestroyDescriptorPool(VkDescriptorPool descriptorPool);
+void ResetDescriptorPool(VkDescriptorPool descriptorPool, VkDescriptorPoolResetFlags flags);
+void AllocateDescriptorSets(const VkDescriptorSetAllocateInfo* pAllocateInfo, VkDescriptorSet* pDescriptorSets);
+void FreeDescriptorSets(VkDescriptorPool descriptorPool, uint32_t descriptorSetCount, const VkDescriptorSet* pDescriptorSets);
+void UpdateDescriptorSets(uint32_t descriptorWriteCount, const VkWriteDescriptorSet* pDescriptorWrites, uint32_t descriptorCopyCount, const VkCopyDescriptorSet* pDescriptorCopies);
+VkFramebuffer CreateFramebuffer(const VkFramebufferCreateInfo* pCreateInfo);
+void DestroyFramebuffer(VkFramebuffer framebuffer);
+VkRenderPass CreateRenderPass(const VkRenderPassCreateInfo* pCreateInfo);
+void DestroyRenderPass(VkRenderPass renderPass);
+VkExtent2D GetRenderAreaGranularity(VkRenderPass renderPass);
+VkCommandPool CreateCommandPool(const VkCommandPoolCreateInfo* pCreateInfo);
+void DestroyCommandPool(VkCommandPool commandPool);
+void ResetCommandPool(VkCommandPool commandPool, VkCommandPoolResetFlags flags);
+void AllocateCommandBuffers(const VkCommandBufferAllocateInfo* pAllocateInfo, VkCommandBuffer* pCommandBuffers);
+void FreeCommandBuffers(VkCommandPool commandPool, uint32_t commandBufferCount, const VkCommandBuffer* pCommandBuffers);
+VkSwapchainKHR CreateSwapchain(const VkSwapchainCreateInfoKHR* pCreateInfo);
+void DestroySwapchain(VkSwapchainKHR swapchain);
+VkImage* GetSwapchainImages(VkSwapchainKHR swapchain, uint* count);
+VkResult AcquireNextImage(VkSwapchainKHR swapchain, uint64 timeout, VkSemaphore semaphore, VkFence fence, uint* idx);
+VkDeviceGroupPresentCapabilitiesKHR GetDeviceGroupPresentCapabilities();
+VkDeviceGroupPresentModeFlagsKHR GetDeviceGroupSurfacePresentModes(VkSurfaceKHR surface);
+uint AcquireNextImage2(const VkAcquireNextImageInfoKHR* pAcquireInfo);
+void DestroySurface(VkSurfaceKHR surface);
+VkPhysicalDeviceFeatures GetPhysicalDeviceFeatures();
+VkFormatProperties GetPhysicalDeviceFormatProperties(VkFormat format);
+VkPhysicalDeviceProperties GetPhysicalDeviceProperties();
+VkExtensionProperties* EnumerateDeviceExtensionProperties(uint* count);
+VkQueueFamilyProperties* GetPhysicalDeviceQueueFamilyProperties(uint* count);
+VkPhysicalDeviceMemoryProperties GetPhysicalDeviceMemoryProperties();
+VkBool32 GetPhysicalDeviceSurfaceSupport(uint queueFamilyIndex, VkSurfaceKHR surface);
+VkSurfaceCapabilitiesKHR GetPhysicalDeviceSurfaceCapabilities(VkSurfaceKHR surface);
+VkSurfaceFormatKHR* GetPhysicalDeviceSurfaceFormats(VkSurfaceKHR surface, uint* count);
+VkPresentModeKHR* GetPhysicalDeviceSurfacePresentModes(VkSurfaceKHR surface, uint* count);
+VkRect2D* GetPhysicalDevicePresentRectangles(VkSurfaceKHR surface, uint* count);
+VkPresentModeKHR GetPresentMode(VkSurfaceKHR surface);
+VkExtensionProperties* EnumerateInstanceExtensionProperties(uint* count);
+VkLayerProperties* EnumerateInstanceLayerProperties(uint* count);
+#ifdef __linux__
+VkSurfaceKHR CreateXlibSurface(const VkXlibSurfaceCreateInfoKHR* pCreateInfo);
+VkBool32 GetPresentationSupport(uint queueFamilyIndex, Display* dpy, VisualID visualID);
+#elif _WIN32
+VkSurfaceKHR CreateWin32Surface(void* hwnd);
+VkBool32 GetPresentationSupport(uint queueFamilyIndex);
+#endif
+void InitVulkan();
+
+namespace VkEXTFN
+{
+	inline PFN_vkCmdPushDescriptorSetKHR PushDescriptorSet;
+}
